@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0; /* Just to help see the full page is centered */
+  }
+  .centered-content {
+    width: 90%; /* or whatever width you prefer */
+    text-align: center; /* Centers text inside the container */
+    /* Add more styling as needed */
+  }
+  input[type="text"] {
+    /* Style your input text box */
+    margin-top: 20px; /* Example spacing */
+    display: block; /* Ensures the input is a block element for margin auto to work */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bordered-box {
+    border: 2px solid #333; /* Solid border */
+    padding: 20px; /* Space between the border and the content inside */
+    margin: 100px auto; /* Top and bottom margin to move it higher, auto for horizontal centering */
+    width: 99%; /* Increase width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for a bit of depth */
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 75px; /* Adjust the space between buttons */
+    padding: 100px;
+  }
+  button {
+    width: 350px; /* Diameter of the circle */
+    height: 300px; /* Diameter of the circle */
+    padding: 50px;
+    border-radius: 50%; /* This makes the button circular */
+    border: 2px solid #007BFF; /* Border color */
+    color: #007BFF; /* Text color */
+    background-color: #fff; /* Button background color */
+    font-size: 16px; /* Adjust as needed */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+  }
+  button:hover {
+    background-color: #007BFF; /* Color when hovered */
+    color: #fff; /* Text color when hovered */
+  }
+  #progressBarContainer {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+#progressBarFill {
+    height: 20px;
+    width: 0%; /* Start width */
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out; /* Smooth transition for width changes */
+}
