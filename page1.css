@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+
+
+html, body {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    color: white;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0; /* Just to help see the full page is centered */
+    background-image: url('images/backgroundimg2.png'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-position: center; /* Center the background image */
+  }
+  
+  .centered-content {
+    width: 90%; /* or whatever width you prefer */
+    text-align: center; /* Centers text inside the container */
+    /* Add more styling as needed */
+  }
+  
+  input[type="text"] {
+    /* Style your input text box */
+    margin-top: 20px; /* Example spacing */
+    display: block; /* Ensures the input is a block element for margin auto to work */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .bordered-box {
+    border: 2px solid #333; /* Solid border */
+    padding: 20px; /* Space between the border and the content inside */
+    margin: 100px auto; /* Top and bottom margin to move it higher, auto for horizontal centering */
+    width: 99%; /* Increase width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for a bit of depth */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust the space between buttons */
+    padding: 80px;
+  }
+  
+  button {
+    width: 200px; /* Adjusted width */
+    height: 200px; /* Adjusted height */
+    padding: 30px; /* Adjusted padding */
+    border-radius: 50%; /* This makes the button circular */
+    border: 2px solid #007BFF; /* Border color */
+    color: #007BFF; /* Text color */
+    background-color: #fff; /* Button background color */
+    font-size: 30px; /* Adjust as needed */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-family: "Bubblegum Sans", sans-serif; /* Added font-family */
+    white-space: nowrap; /* Prevents text from wrapping */
+
+}
+  
+  button:hover {
+    background-color: #007BFF; /* Color when hovered */
+    color: #fff; /* Text color when hovered */
+  }
+  
+  .animated-button1 {
+    opacity: 0; /* Initially hidden */
+    animation: slideIn 0.5s ease forwards; /* Animation */
+    animation-delay: 0.5s; /* Delay for sequential appearance */
+  }
+
+
+  .animated-button2 {
+    opacity: 0; /* Initially hidden */
+    animation: slideIn 0.5s ease forwards; /* Animation */
+    animation-delay: 0.7s; /* Delay for sequential appearance */
+  }
+
+
+  .animated-button3 {
+    opacity: 0; /* Initially hidden */
+    animation: slideIn 0.5s ease forwards; /* Animation */
+    animation-delay: 0.8s; /* Delay for sequential appearance */
+
+  }
+
+  .animated-button4 {
+    opacity: 0; /* Initially hidden */
+    animation: slideIn 0.5s ease forwards; /* Animation */
+    animation-delay: 0.9s; /* Delay for sequential appearance */
+
+  }
+
+
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Initial position below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Final position at the center */
+    }
+  }
+  
+
+  nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%; /* Ensures the navbar spans the entire width of the viewport */
+    display: inline-block;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+
+  li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    color: blue;
+  }
+  
