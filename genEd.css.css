@@ -1,0 +1,53 @@
+#customers {
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #6c1010;
+  color: white;
+}
+
+#about {
+  text-align: center;
+  padding: 10px;
+  border-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the box horizontally */
+}
+
+.circle {
+  display: inline-block; /* Ensures logos are displayed in a row */
+
+}
+
+.circle img {
+  width: 90px; /* Set the width of the logos */
+  height: 70px; /* Set the height of the logos */
+  border-radius: 50%; /* Makes the logos round */
+  transition: transform 0.3s; /* Smooth transition effect on hover */
+  border: 1px solid black;
+}
+
+.circle:hover img {
+  transform: scale(1.1); /* Increase size of logo on hover */
+}
