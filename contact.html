@@ -1,44 +1,127 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contact Us</title>
-    <style>
-      div {
-        background-color: rgb(197, 193, 193);
-        width: 290px;
-        border-radius: 12px;
-  
-  padding: 10px;
-        border: 2px solid;
-        border-color: black;
-        margin-left: auto;
-        margin-right: auto;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Career Buddy</title>
+  <style>
 
-      div > h3 {
-        text-transform: uppercase;
-      }
-      div:hover {
-        background-color: rgb(219, 218, 218);
-      }
-    </style>
-  </head>
-  <body>
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+
+
+    body {
+      background-image: url('images/backgroundimg2.png'); /* Replace 'backgroundimg2.png' with the path to your background image */
+        background-size: cover; /* Cover the entire viewport */
+        background-repeat: no-repeat; /* Do not repeat the background image */
+        background-position: center; /* Center the background image */
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .contact-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    h3 {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    address {
+      font-style: normal;
+      margin: 0;
+      line-height: 1.5;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+
+    nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%; /* Ensures the navbar spans the entire width of the viewport */
+    display: inline-block;
+  }
+
+  ul {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+
+  li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    color: blue;
+  }
+
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="page1.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+
+
+
+
+  <div class="contact-container">
+    <h1>Contact Us</h1>
     <div>
-      <h3 title="Our location ">Address</h3>
+      <h3 title="Our location">Address</h3>
       <address>
-        Visit us in person at:<br />
-        Brooklyn College<br />
-        2900 Bedford Avenue<br />
+        Visit us in person at:<br>
+        Brooklyn College<br>
+        2900 Bedford Avenue<br>
         Brooklyn, NY 11210
-      </address><br>
-
-      <h3 title="Contact us by phone or email">Contact Us</h3>
-      <address>
-        <b>Phone Number:</b> 718.951.5000 <br />
-        <b>Email address:</b> website@brooklyn.cuny.edu
       </address>
     </div>
-  </body>
+    <div>
+      <h3 title="Contact us by phone or email">Phone & Email</h3>
+      <address>
+        <b>Phone Number:</b> <a href="tel:+17189515000">718.951.5000</a> <br>
+        <b>Email address:</b> <a href="mailto:website@brooklyn.cuny.edu">website@brooklyn.cuny.edu</a>
+      </address>
+    </div>
+  </div>
+</body>
 </html>
