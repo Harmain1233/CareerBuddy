@@ -46,7 +46,7 @@ html, body {
   .button-container {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Adjust the space between buttons */
+    gap: 80px; /* Adjust the space between buttons */
     padding: 80px;
   }
   
@@ -62,8 +62,8 @@ html, body {
     cursor: pointer; /* Changes the cursor to a pointer on hover */
     font-family: "Bubblegum Sans", sans-serif; /* Added font-family */
     white-space: nowrap; /* Prevents text from wrapping */
-
-}
+  
+  }
   
   button:hover {
     background-color: #007BFF; /* Color when hovered */

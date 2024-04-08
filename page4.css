@@ -21,6 +21,8 @@ h2{
 }
 /* Rest of your CSS styles */
 h1 {
+  
+  padding: 20px;
   color: white;
   text-align: center;
   white-space: nowrap;
@@ -98,3 +100,54 @@ h1 {
   .circle:hover img {
     transform: scale(1.2); /* Increase size of logo on hover */
   }
+  #progressBarContainer {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 1500px; /* Fixed width */
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 5px; /* Adds padding around the fill bar */
+    box-sizing: border-box; /* Ensures padding doesn't add to the total width */
+    margin: 0 auto; /* Centers the progress bar container horizontally */
+}
+
+#progressBarFill {
+    height: 100%;
+    width: 75%; /* Represents the progress */
+    background-color: #4297d8;
+    border-radius: 3px; /* Slightly less than the container to fit nicely inside */
+    transition: width 0.4s ease-in-out;
+}
+nav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Ensures the navbar spans the entire width of the viewport */
+  display: inline-block;
+}
+
+ul {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: blue;
+}

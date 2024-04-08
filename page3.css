@@ -20,6 +20,7 @@ html, body {
 
 
 h1 {
+  font-size: 40px;
   color: white;
   text-align: center;
   white-space: nowrap;
@@ -130,7 +131,7 @@ button:hover {
 #progressBarFill {
   height: 100%;
   width: 75%; /* Represents the progress */
-  background-color: #4caf50;
+  background-color: #4297d8;
   border-radius: 3px; /* Slightly less than the container to fit nicely inside */
   transition: width 0.4s ease-in-out;
 }
