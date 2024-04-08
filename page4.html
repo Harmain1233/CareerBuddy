@@ -4,11 +4,31 @@
 </head>
 <body>
     <link rel="stylesheet" href="page4.css">
-<h2>Career Buddy</h2>
+    <nav>
+        <ul>
+          <li><a href="page1.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+<h2></h2>
 <div id = "about">
   <!-- PAGE 4 HARMAIN -->
 <h1>Here is a curated list of opportunities just for you!</h1>
 </div>
+<div id="progressBarContainer">
+    <div id="progressBarFill"></div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      updateProgress(99);
+  });
+
+  function updateProgress(percent) {
+      document.getElementById('progressBarFill').style.width = percent + '%';
+  }
+</script>
 <table id="customers">
   <tr>
     <th>List of Research Opportunities</th>
@@ -62,7 +82,12 @@
         </div>
       </a>
     </td>
+
+    <td> Accounting Intern at First United Bank:  Incoming Senior
+      Pursuing a bachelors degree in accounting or finance.</td>
+
     <td> At LMI, we’re reimagining the path from insight to outcome at The New Speed of Possible™. Combining a legacy of over 60 years of federal expertise with our innovation ecosystem, we minimize time to value and accelerate mission success. We energize the brightest minds with emerging technologies to inspire creative solutioning and push the boundaries of capability. LMI advances the pace of progress, enabling our customers to thrive while adapting to evolving mission needs. .</td>
+
   </tr>
   <tr>
     <td>
@@ -79,4 +104,3 @@
 
 </body>
 </html>
-

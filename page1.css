@@ -46,7 +46,7 @@ html, body {
   .button-container {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Adjust the space between buttons */
+    gap: 80px; /* Adjust the space between buttons */
     padding: 80px;
   }
   
@@ -62,8 +62,8 @@ html, body {
     cursor: pointer; /* Changes the cursor to a pointer on hover */
     font-family: "Bubblegum Sans", sans-serif; /* Added font-family */
     white-space: nowrap; /* Prevents text from wrapping */
-
-}
+  
+  }
   
   button:hover {
     background-color: #007BFF; /* Color when hovered */
@@ -121,6 +121,11 @@ html, body {
   }
 
   ul {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    color: white;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -139,4 +144,21 @@ html, body {
   li a:hover {
     color: blue;
   }
-  
+  #progressBarContainer {
+    
+    width: 1500px; /* Fixed width */
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 5px; /* Adds padding around the fill bar */
+    box-sizing: border-box; /* Ensures padding doesn't add to the total width */
+    margin: 0 auto; /* Centers the progress bar container horizontally */
+}
+
+#progressBarFill {
+    height: 100%;
+    width: 75%; /* Represents the progress */
+    background-color: #4caf50;
+    border-radius: 3px; /* Slightly less than the container to fit nicely inside */
+    transition: width 0.4s ease-in-out;
+}

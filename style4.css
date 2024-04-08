@@ -1,48 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 
-html, body {
-  font-family: "Bubblegum Sans", sans-serif;
-  height: 100%;
-  margin: 0;
-  background-image: url('images/backgroundimg2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  scroll-behavior: smooth;
-}
-
-h2{
-  color: white;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 40px;
-
-}
-/* Rest of your CSS styles */
-h1 {
-  
-  padding: 20px;
-  color: white;
-  text-align: center;
-  white-space: nowrap;
-  width: 120%;
-  overflow: hidden;
-  animation:
-  typing 2s steps(26),
-  cursor .4s step-end infinite alternate;
-}
-
-@keyframes cursor {
-  50% { border-color : transparent }
-}
-
-@keyframes typing  {
-  from { width : 0}
-}
-
-
 /* PAGE 4 HARMAIN STYLING */ 
+
+h1{
+  padding: 25px;
+}
 #customers {
     margin-top: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -53,24 +15,19 @@ h1 {
   }
   
   #customers td, #customers th {
-    font-family: "Bubblegum Sans", sans-serif;
     border: 1px solid #ddd;
     padding: 8px;
   }
   
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
   
-  #customers tr:hover {background-color: #71b3f9;}
-
-  #customers tr {
-    background-color: rgb(248, 248, 248);
-}
-
+  #customers tr:hover {background-color: #ddd;}
   
   #customers th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #007BFF;
+    background-color: #6c1010;
     color: white;
   }
 
@@ -79,7 +36,7 @@ h1 {
     padding: 10px;
     border-color: black;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(201, 14, 14, 0.1);
     width: 500px; /* Adjust the width as needed */
     margin: 0 auto; /* Center the box horizontally */
 }
@@ -98,7 +55,7 @@ h1 {
   }
 
   .circle:hover img {
-    transform: scale(1.2); /* Increase size of logo on hover */
+    transform: scale(1.1); /* Increase size of logo on hover */
   }
   #progressBarContainer {
     padding-bottom: 100px;
@@ -115,7 +72,7 @@ h1 {
 #progressBarFill {
     height: 100%;
     width: 75%; /* Represents the progress */
-    background-color: #4297d8;
+    background-color: #4caf50;
     border-radius: 3px; /* Slightly less than the container to fit nicely inside */
     transition: width 0.4s ease-in-out;
 }
