@@ -3,47 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <title>About Us</title>
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    />
     <style>
+     @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+      body {
+        font-family: sans-serif;
+        background-image: url('images/backgroundimg2.png'); /* Replace 'backgroundimg2.png' with the path to your background image */
+        background-size: cover; /* Cover the entire viewport */
+        background-repeat: no-repeat; /* Do not repeat the background image */
+        background-position: center; /* Center the background image */
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Make sure the body fills the entire viewport height */
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+      }
+
       div {
-        background-color: rgb(197, 193, 193);
+        background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background color to make the content readable */
         width: 50%;
         border-radius: 12px;
-
         border: 2px solid;
         border-color: black;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 20px;
+        box-sizing: border-box; /* Include padding in the width calculation */
       }
 
       div > h3 {
         text-transform: uppercase;
       }
+
       div:hover {
         background-color: rgb(219, 218, 218);
       }
+
+
+  nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%; /* Ensures the navbar spans the entire width of the viewport */
+    display: inline-block;
+  }
+
+  ul {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+
+  li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    color: blue;
+  }
     </style>
   </head>
   <body>
+    <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="page1.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
     <div>
       <h3>Our Mission</h3>
       <p>
-        With this website, it'll be much easier to find an internship from your
-        device without requiring an user account.
+        We built this website on behalf of all frustrated undergraduate students, looking for a place
+        to find opportunities easily. There's no login, so all you have to do is click  buttons that
+        will lead you to your dream offer!
       </p>
       <p>
-        Our available internships are STEM, Liberal Arts and General Studies.
+        Our available internships are for the majors STEM, Liberal Arts and General Studies. We hope to add more
+        for students of all majors. 
       </p>
 
       <h3>Our Origins</h3>
       <p>
-        This website started out as a simple project by a group of BC students,
-        in order to search for an internship without having to jump many hoops.
+        As a team of undergraduate students, we too have faced the difficulties of the internship search. We
+        aim to help undergraduate students find a safe space, where they can feel at ease when searching for internships.
       </p>
     </div>
   </body>
