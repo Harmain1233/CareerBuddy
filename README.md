@@ -11,11 +11,12 @@ CareerBuddy is an innovative web application crafted as part of a Human-Computer
 **Technologies Used:**
 - **Frontend:** HTML, CSS, JavaScript
 
-### Project StoryBoard
+**Project StoryBoard**
 
 <img width="850" alt="Screenshot 2024-09-16 at 12 33 15 AM" src="https://github.com/user-attachments/assets/02fe6ec5-80cd-44d2-9431-a1d8a36505a3">
 
-## Wireframes (See More in Folder) 
+### Wireframes (See More in Folder)
 <img width="640" alt="Screenshot 2024-09-16 at 12 34 29 AM" src="https://github.com/user-attachments/assets/7b2666ec-6d5f-4a5a-8991-353b2ff2c73e">
 
+<img width="647" alt="Screenshot 2024-09-16 at 12 37 27 AM" src="https://github.com/user-attachments/assets/4a62bd20-c22b-4494-ba42-70f28c169486">
 
