@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="page3.css">
+<title>Centered Page Content</title>
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<div class="centered-content">
+  <div class="bordered-box">
+    <h1>Please select the type of opportunity that you are most interested in</h1>
+  </div>
+  <div id="progressBarContainer">
+    <div id="progressBarFill"></div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      updateProgress(66);
+  });
+
+  function updateProgress(percent) {
+      document.getElementById('progressBarFill').style.width = percent + '%';
+  }
+</script>
+
+
+  <div class="button-container">
+    <button id="btn1" type="button">Research</button>
+    <script>
+      document.getElementById('btn1').addEventListener('click', function() {
+          window.location.href = 'page4.html'; 
+      });
+  </script>
+    <button id="btn2" type="button">Internship</button>
+    <script>
+      document.getElementById('btn2').addEventListener('click', function() {
+          window.location.href = 'page5.html';
+      });
+  </script>
+    <button id="btn3" type="button">Fellowship</button>
+    <script>
+      document.getElementById('btn3').addEventListener('click', function() {
+          window.location.href = 'page6.html'; 
+      });
+  </script>
+
+  </div>
+</div>
+
+
+<script src=""></script>
+</body>
+</html>
